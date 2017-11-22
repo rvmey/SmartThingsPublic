@@ -182,7 +182,7 @@ def initialize() {
 
 }
 
-def cleanupTriggers() {
+def cleanupTriggers() {  // This deletes switches associated with deleted triggers, unless the switch is associated with another SmartApp
 	debugOut "Running cleanupTriggers."
     deviceDiscovery()    
     
